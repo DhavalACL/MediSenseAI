@@ -1,0 +1,258 @@
+{
+    "rules": [
+        {
+            "diseaseKey": "pneumonia-bacterial",
+            "conditions": {
+                "ageMin": 55,
+                "bmiMax": 37,
+                "bp": {
+                    "systolicMin": 135
+                }
+            },
+            "priority": 5,
+            "treatment": [
+                "Start antibiotics as prescribed by a physician",
+                "Ensure proper hydration and rest",
+                "Seek hospital care if symptoms worsen"
+            ],
+            "lifestyle": [
+                "Avoid smoking and alcohol",
+                "Maintain good lung hygiene and breathing exercises"
+            ],
+            "therapy": [
+                "Chest physiotherapy",
+                "Steam inhalation"
+            ]
+        },
+        {
+            "diseaseKey": "pneumonia-viral",
+            "conditions": {
+                "ageMin": 50
+            },
+            "priority": 4,
+            "treatment": [
+                "Supportive care with fluids and rest",
+                "Monitor temperature regularly"
+            ],
+            "lifestyle": [
+                "Increase vitamin C intake",
+                "Gentle breathing exercises"
+            ],
+            "therapy": [
+                "Oxygen therapy if necessary"
+            ]
+        },
+        {
+            "diseaseKey": "braintumour-meningioma",
+            "conditions": {
+                "ageMin": 40,
+                "bp": { "systolicMin": 140 }
+            },
+            "priority": 5,
+            "treatment": [
+                "Consult a neurosurgeon immediately",
+                "MRI/CT scan follow-up every 3 months",
+                "Consider surgical removal if recommended"
+            ],
+            "lifestyle": [
+                "Low-sodium, high-antioxidant diet",
+                "Stress reduction (yoga, meditation)"
+            ],
+            "therapy": [
+                "Cognitive rehabilitation therapy"
+            ]
+        },
+        {
+            "diseaseKey": "braintumour-glioma",
+            "priority": 5,
+            "treatment": [
+                "Oncologist consultation and biopsy",
+                "Chemotherapy or radiation if advised"
+            ],
+            "lifestyle": [
+                "Maintain a healthy sleep cycle",
+                "Nutrient-rich, plant-based diet"
+            ],
+            "therapy": [
+                "Speech and physical therapy"
+            ]
+        },
+        {
+            "diseaseKey": "heart-coronary",
+            "conditions": {
+                "ageMin": 45,
+                "bmiMax": 32
+            },
+            "priority": 5,
+            "treatment": [
+                "Immediate cardiologist consultation",
+                "Start on prescribed statins or blood thinners",
+                "Monitor cholesterol levels regularly"
+            ],
+            "lifestyle": [
+                "Low-salt, low-fat diet",
+                "Daily brisk walking or light cardio (30 mins)"
+            ],
+            "therapy": [
+                "Cardiac rehabilitation programs"
+            ]
+        },
+        {
+            "diseaseKey": "heart-arrhythmia",
+            "priority": 4,
+            "treatment": [
+                "Anti-arrhythmic medications under supervision",
+                "Regular ECG and heart monitoring"
+            ],
+            "lifestyle": [
+                "Reduce caffeine and alcohol intake",
+                "Stress management techniques"
+            ],
+            "therapy": [
+                "Pacemaker therapy (if prescribed)"
+            ]
+        },
+        {
+            "diseaseKey": "diabetes-type2",
+            "conditions": {
+                "bmiMin": 25,
+                "ageMin": 35
+            },
+            "priority": 5,
+            "treatment": [
+                "Consult an endocrinologist",
+                "Start Metformin if prescribed",
+                "Monitor blood sugar levels daily"
+            ],
+            "lifestyle": [
+                "Low-carb, high-fiber diet",
+                "Daily 30 min physical activity"
+            ],
+            "therapy": [
+                "Insulin therapy if required"
+            ]
+        },
+        {
+            "diseaseKey": "hypertension",
+            "conditions": {
+                "bp": { "systolicMin": 140, "diastolicMin": 90 }
+            },
+            "priority": 4,
+            "treatment": [
+                "Start antihypertensive medication (if prescribed)",
+                "Monitor blood pressure twice a day"
+            ],
+            "lifestyle": [
+                "Reduce salt intake",
+                "Stress management (yoga, meditation)"
+            ],
+            "therapy": [
+                "Cardiac monitoring programs"
+            ]
+        },
+        {
+            "diseaseKey": "obesity",
+            "conditions": {
+                "bmiMin": 30
+            },
+            "priority": 3,
+            "treatment": [
+                "Consult a nutritionist for weight management",
+                "Consider medical weight loss programs"
+            ],
+            "lifestyle": [
+                "Calorie-restricted, balanced diet",
+                "Daily 45 mins moderate activity"
+            ],
+            "therapy": [
+                "Behavioral therapy for eating habits"
+            ]
+        },
+        {
+            "conditions": {
+                "ageMin": 65
+            },
+            "priority": 3,
+            "treatment": [
+                "Annual health check-ups",
+                "Vitamin D and calcium supplements if recommended"
+            ],
+            "lifestyle": [
+                "Daily light physical activity",
+                "Stay hydrated and maintain balanced diet"
+            ],
+            "therapy": ["No therapy is needed at this stage."]
+        },
+        {
+            "conditions": {
+                "bp": { "systolicMax": 100 }
+            },
+            "priority": 3,
+            "treatment": [
+                "Stay hydrated and rest",
+                "Check for underlying heart or thyroid issues"
+            ],
+            "lifestyle": [
+                "Increase salt intake if advised",
+                "Avoid sudden posture changes"
+            ],
+            "therapy": ["No therapy is needed at this stage."]
+        },
+        {
+            "conditions": {
+                "bmiMax": 18.5
+            },
+            "priority": 2,
+            "treatment": [
+                "Consult a dietician for a calorie-rich plan"
+            ],
+            "lifestyle": [
+                "Include high-protein and healthy fats in meals",
+                "Avoid skipping meals"
+            ],
+            "therapy": ["No therapy is needed at this stage."]
+        },
+        {
+            "conditions": {
+                "smoking": true
+            },
+            "priority": 2,
+            "treatment": [
+                "Consider a smoking cessation program"
+            ],
+            "lifestyle": [
+                "Adopt nicotine replacement therapies if recommended",
+                "Avoid second-hand smoke"
+            ],
+            "therapy": [
+                "Behavioral therapy for habit control"
+            ]
+        },
+        {
+            "conditions": {
+                "ageMin": 18,
+                "ageMax": 35
+            },
+            "priority": 1,
+            "treatment": [
+                "Maintain a general healthy lifestyle"
+            ],
+            "lifestyle": [
+                "Exercise 3–4 times a week",
+                "Balanced diet with fruits and vegetables"
+            ],
+            "therapy": ["No therapy is needed at this stage."]
+        }
+    ],
+    "defaults": {
+        "priority": 2,
+        "treatment": [
+            "Consult your physician for a personalized plan"
+        ],
+        "lifestyle": [
+            "Maintain a balanced diet and regular activity"
+        ],
+        "therapy": ["No therapy is needed at this stage."]
+    }
+}
+

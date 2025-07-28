@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "model_brain_tumour.tflite",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

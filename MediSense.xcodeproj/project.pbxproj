@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F7604522E2CC31F001CBC7B /* MediSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604512E2CC31F001CBC7B /* MediSenseApp.swift */; };
+		7F7604562E2CC320001CBC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7604552E2CC320001CBC7B /* Assets.xcassets */; };
+		7F7604592E2CC320001CBC7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7604582E2CC320001CBC7B /* Preview Assets.xcassets */; };
+		7F7604612E2CC482001CBC7B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7F7604602E2CC482001CBC7B /* Lottie */; };
+		7F7604632E2CC6A6001CBC7B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604622E2CC6A6001CBC7B /* LottieView.swift */; };
+		7F7604652E2CC6C5001CBC7B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604642E2CC6C5001CBC7B /* SplashScreen.swift */; };
+		7F7604672E2CC6FF001CBC7B /* IntroductionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604662E2CC6FF001CBC7B /* IntroductionPage.swift */; };
+		7F76046B2E2CCAC8001CBC7B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76046A2E2CCAC8001CBC7B /* Color.swift */; };
+		7F76046D2E2CCB4E001CBC7B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76046C2E2CCB4E001CBC7B /* AppViewModel.swift */; };
+		7F7604752E314F7C001CBC7B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604702E314F7B001CBC7B /* HomePageView.swift */; };
+		7F7604762E314F7C001CBC7B /* RoundedTopWhiteContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604712E314F7B001CBC7B /* RoundedTopWhiteContainer.swift */; };
+		7F7604772E314F7C001CBC7B /* BrainTumourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604722E314F7C001CBC7B /* BrainTumourView.swift */; };
+		7F7604822E34DD99001CBC7B /* OpenCloseTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604812E34DD99001CBC7B /* OpenCloseTextBox.swift */; };
+		7F7604842E34DF73001CBC7B /* HeartDiseaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604832E34DF73001CBC7B /* HeartDiseaseView.swift */; };
+		7F7604862E34DF79001CBC7B /* PneumoniaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604852E34DF79001CBC7B /* PneumoniaView.swift */; };
+		7F7604882E34E62A001CBC7B /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604872E34E62A001CBC7B /* NewsView.swift */; };
+		7F76048A2E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604892E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift */; };
+		7F76048E2E34EAC9001CBC7B /* BrainTumourClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */; };
+		7F76048F2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */; };
+		7F7604912E34EBAA001CBC7B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604902E34EBAA001CBC7B /* ImagePicker.swift */; };
+		7F7604932E34F4C3001CBC7B /* PneumoniaClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604922E34F4C3001CBC7B /* PneumoniaClassifyView.swift */; };
+		7F7604952E34FA65001CBC7B /* BrainTumourClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604942E34FA65001CBC7B /* BrainTumourClassifyView.swift */; };
+		7F7604972E3501D0001CBC7B /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604962E3501D0001CBC7B /* ImagePredictor.swift */; };
+		7F7604992E3502DE001CBC7B /* ClinicalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604982E3502DE001CBC7B /* ClinicalModel.swift */; };
+		7F76049B2E351D8C001CBC7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76049A2E351D8C001CBC7B /* Extensions.swift */; };
+		7F8DB07E2E35538700DAF22B /* PatientInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DB07D2E35538700DAF22B /* PatientInputView.swift */; };
+		7F8DB0802E3553E300DAF22B /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DB07F2E3553E300DAF22B /* RecommendationView.swift */; };
+		7F8DB0832E3558DD00DAF22B /* ReccomendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DB0822E3558DD00DAF22B /* ReccomendationModel.swift */; };
+		7FED0AC02E3633BA003CB2A3 /* Recommendation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FED0ABF2E3633BA003CB2A3 /* Recommendation.json */; };
+		7FED0AC42E3639F4003CB2A3 /* PatientProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED0AC32E3639F4003CB2A3 /* PatientProfile.swift */; };
+		7FED0AC62E363A61003CB2A3 /* RecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED0AC52E363A61003CB2A3 /* RecommendationEngine.swift */; };
+		7FED0AC82E363AF0003CB2A3 /* RecommendationRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED0AC72E363AF0003CB2A3 /* RecommendationRules.swift */; };
+		7FFFC0022E379BBF0066DF2C /* SnapShotRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFC0012E379BBF0066DF2C /* SnapShotRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F76044E2E2CC31F001CBC7B /* MediSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7604512E2CC31F001CBC7B /* MediSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediSenseApp.swift; sourceTree = "<group>"; };
+		7F7604552E2CC320001CBC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F7604582E2CC320001CBC7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F7604622E2CC6A6001CBC7B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		7F7604642E2CC6C5001CBC7B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		7F7604662E2CC6FF001CBC7B /* IntroductionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPage.swift; sourceTree = "<group>"; };
+		7F76046A2E2CCAC8001CBC7B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F76046C2E2CCB4E001CBC7B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		7F7604702E314F7B001CBC7B /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		7F7604712E314F7B001CBC7B /* RoundedTopWhiteContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTopWhiteContainer.swift; sourceTree = "<group>"; };
+		7F7604722E314F7C001CBC7B /* BrainTumourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTumourView.swift; sourceTree = "<group>"; };
+		7F7604812E34DD99001CBC7B /* OpenCloseTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCloseTextBox.swift; sourceTree = "<group>"; };
+		7F7604832E34DF73001CBC7B /* HeartDiseaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDiseaseView.swift; sourceTree = "<group>"; };
+		7F7604852E34DF79001CBC7B /* PneumoniaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PneumoniaView.swift; sourceTree = "<group>"; };
+		7F7604872E34E62A001CBC7B /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		7F7604892E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDiseaseClassifyView.swift; sourceTree = "<group>"; };
+		7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrainTumourClassifier.mlpackage; sourceTree = "<group>"; };
+		7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = PneumoniaClassifier.mlpackage; sourceTree = "<group>"; };
+		7F7604902E34EBAA001CBC7B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7F7604922E34F4C3001CBC7B /* PneumoniaClassifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PneumoniaClassifyView.swift; sourceTree = "<group>"; };
+		7F7604942E34FA65001CBC7B /* BrainTumourClassifyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTumourClassifyView.swift; sourceTree = "<group>"; };
+		7F7604962E3501D0001CBC7B /* ImagePredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		7F7604982E3502DE001CBC7B /* ClinicalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalModel.swift; sourceTree = "<group>"; };
+		7F76049A2E351D8C001CBC7B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7F8DB07D2E35538700DAF22B /* PatientInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientInputView.swift; sourceTree = "<group>"; };
+		7F8DB07F2E3553E300DAF22B /* RecommendationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		7F8DB0822E3558DD00DAF22B /* ReccomendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReccomendationModel.swift; sourceTree = "<group>"; };
+		7FED0ABF2E3633BA003CB2A3 /* Recommendation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recommendation.json; sourceTree = "<group>"; };
+		7FED0AC32E3639F4003CB2A3 /* PatientProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfile.swift; sourceTree = "<group>"; };
+		7FED0AC52E363A61003CB2A3 /* RecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngine.swift; sourceTree = "<group>"; };
+		7FED0AC72E363AF0003CB2A3 /* RecommendationRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationRules.swift; sourceTree = "<group>"; };
+		7FFFC0012E379BBF0066DF2C /* SnapShotRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotRenderer.swift; sourceTree = "<group>"; };
+		7FFFC0032E379C110066DF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F76044B2E2CC31F001CBC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7604612E2CC482001CBC7B /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F7604452E2CC31F001CBC7B = {
+			isa = PBXGroup;
+			children = (
+				7F7604502E2CC31F001CBC7B /* MediSense */,
+				7F76044F2E2CC31F001CBC7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F76044F2E2CC31F001CBC7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F76044E2E2CC31F001CBC7B /* MediSense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F7604502E2CC31F001CBC7B /* MediSense */ = {
+			isa = PBXGroup;
+			children = (
+				7FFFC0032E379C110066DF2C /* Info.plist */,
+				7F7604512E2CC31F001CBC7B /* MediSenseApp.swift */,
+				7F76048B2E34EA8F001CBC7B /* Models */,
+				7F76047D2E34DA31001CBC7B /* ViewModels */,
+				7F76047C2E34DA2B001CBC7B /* Pages */,
+				7F76047B2E34DA17001CBC7B /* OtherViews */,
+				7F76047A2E34DA00001CBC7B /* Utility */,
+				7F7604552E2CC320001CBC7B /* Assets.xcassets */,
+				7F7604572E2CC320001CBC7B /* Preview Content */,
+			);
+			path = MediSense;
+			sourceTree = "<group>";
+		};
+		7F7604572E2CC320001CBC7B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604582E2CC320001CBC7B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F76047A2E34DA00001CBC7B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7F76046A2E2CCAC8001CBC7B /* Color.swift */,
+				7F7604712E314F7B001CBC7B /* RoundedTopWhiteContainer.swift */,
+				7F7604962E3501D0001CBC7B /* ImagePredictor.swift */,
+				7F7604982E3502DE001CBC7B /* ClinicalModel.swift */,
+				7F76049A2E351D8C001CBC7B /* Extensions.swift */,
+				7FED0AC92E364248003CB2A3 /* Recoimmendation */,
+				7FED0ABF2E3633BA003CB2A3 /* Recommendation.json */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7F76047B2E34DA17001CBC7B /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604642E2CC6C5001CBC7B /* SplashScreen.swift */,
+				7F7604622E2CC6A6001CBC7B /* LottieView.swift */,
+				7F7604812E34DD99001CBC7B /* OpenCloseTextBox.swift */,
+				7F7604902E34EBAA001CBC7B /* ImagePicker.swift */,
+			);
+			path = OtherViews;
+			sourceTree = "<group>";
+		};
+		7F76047C2E34DA2B001CBC7B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604662E2CC6FF001CBC7B /* IntroductionPage.swift */,
+				7F7604702E314F7B001CBC7B /* HomePageView.swift */,
+				7F7604872E34E62A001CBC7B /* NewsView.swift */,
+				7F8DB0812E35588A00DAF22B /* Recommendations */,
+				7F7604802E34DAB9001CBC7B /* HeartDisease */,
+				7F76047F2E34DAB0001CBC7B /* Pneumonia */,
+				7F76047E2E34DAA9001CBC7B /* BrainTumour */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		7F76047D2E34DA31001CBC7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7F76046C2E2CCB4E001CBC7B /* AppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7F76047E2E34DAA9001CBC7B /* BrainTumour */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604722E314F7C001CBC7B /* BrainTumourView.swift */,
+				7F7604942E34FA65001CBC7B /* BrainTumourClassifyView.swift */,
+			);
+			path = BrainTumour;
+			sourceTree = "<group>";
+		};
+		7F76047F2E34DAB0001CBC7B /* Pneumonia */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604852E34DF79001CBC7B /* PneumoniaView.swift */,
+				7F7604922E34F4C3001CBC7B /* PneumoniaClassifyView.swift */,
+			);
+			path = Pneumonia;
+			sourceTree = "<group>";
+		};
+		7F7604802E34DAB9001CBC7B /* HeartDisease */ = {
+			isa = PBXGroup;
+			children = (
+				7F7604832E34DF73001CBC7B /* HeartDiseaseView.swift */,
+				7F7604892E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift */,
+			);
+			path = HeartDisease;
+			sourceTree = "<group>";
+		};
+		7F76048B2E34EA8F001CBC7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */,
+				7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F8DB0812E35588A00DAF22B /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DB07D2E35538700DAF22B /* PatientInputView.swift */,
+				7F8DB07F2E3553E300DAF22B /* RecommendationView.swift */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		7FED0AC92E364248003CB2A3 /* Recoimmendation */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DB0822E3558DD00DAF22B /* ReccomendationModel.swift */,
+				7FED0AC32E3639F4003CB2A3 /* PatientProfile.swift */,
+				7FED0AC72E363AF0003CB2A3 /* RecommendationRules.swift */,
+				7FED0AC52E363A61003CB2A3 /* RecommendationEngine.swift */,
+				7FFFC0012E379BBF0066DF2C /* SnapShotRenderer.swift */,
+			);
+			path = Recoimmendation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F76044D2E2CC31F001CBC7B /* MediSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F76045C2E2CC320001CBC7B /* Build configuration list for PBXNativeTarget "MediSense" */;
+			buildPhases = (
+				7F76044A2E2CC31F001CBC7B /* Sources */,
+				7F76044B2E2CC31F001CBC7B /* Frameworks */,
+				7F76044C2E2CC31F001CBC7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediSense;
+			packageProductDependencies = (
+				7F7604602E2CC482001CBC7B /* Lottie */,
+			);
+			productName = MediSense;
+			productReference = 7F76044E2E2CC31F001CBC7B /* MediSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F7604462E2CC31F001CBC7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7F76044D2E2CC31F001CBC7B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 7F7604492E2CC31F001CBC7B /* Build configuration list for PBXProject "MediSense" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F7604452E2CC31F001CBC7B;
+			packageReferences = (
+				7F76045F2E2CC482001CBC7B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 7F76044F2E2CC31F001CBC7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F76044D2E2CC31F001CBC7B /* MediSense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F76044C2E2CC31F001CBC7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FED0AC02E3633BA003CB2A3 /* Recommendation.json in Resources */,
+				7F7604592E2CC320001CBC7B /* Preview Assets.xcassets in Resources */,
+				7F7604562E2CC320001CBC7B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F76044A2E2CC31F001CBC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7604952E34FA65001CBC7B /* BrainTumourClassifyView.swift in Sources */,
+				7F7604822E34DD99001CBC7B /* OpenCloseTextBox.swift in Sources */,
+				7F7604992E3502DE001CBC7B /* ClinicalModel.swift in Sources */,
+				7F76048E2E34EAC9001CBC7B /* BrainTumourClassifier.mlpackage in Sources */,
+				7FED0AC82E363AF0003CB2A3 /* RecommendationRules.swift in Sources */,
+				7FED0AC42E3639F4003CB2A3 /* PatientProfile.swift in Sources */,
+				7F8DB0832E3558DD00DAF22B /* ReccomendationModel.swift in Sources */,
+				7F7604652E2CC6C5001CBC7B /* SplashScreen.swift in Sources */,
+				7F7604912E34EBAA001CBC7B /* ImagePicker.swift in Sources */,
+				7F76048A2E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift in Sources */,
+				7F7604842E34DF73001CBC7B /* HeartDiseaseView.swift in Sources */,
+				7F7604882E34E62A001CBC7B /* NewsView.swift in Sources */,
+				7F8DB0802E3553E300DAF22B /* RecommendationView.swift in Sources */,
+				7F8DB07E2E35538700DAF22B /* PatientInputView.swift in Sources */,
+				7F76049B2E351D8C001CBC7B /* Extensions.swift in Sources */,
+				7F76048F2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage in Sources */,
+				7F7604762E314F7C001CBC7B /* RoundedTopWhiteContainer.swift in Sources */,
+				7F76046D2E2CCB4E001CBC7B /* AppViewModel.swift in Sources */,
+				7F7604772E314F7C001CBC7B /* BrainTumourView.swift in Sources */,
+				7F76046B2E2CCAC8001CBC7B /* Color.swift in Sources */,
+				7F7604672E2CC6FF001CBC7B /* IntroductionPage.swift in Sources */,
+				7FFFC0022E379BBF0066DF2C /* SnapShotRenderer.swift in Sources */,
+				7F7604972E3501D0001CBC7B /* ImagePredictor.swift in Sources */,
+				7F7604522E2CC31F001CBC7B /* MediSenseApp.swift in Sources */,
+				7F7604752E314F7C001CBC7B /* HomePageView.swift in Sources */,
+				7FED0AC62E363A61003CB2A3 /* RecommendationEngine.swift in Sources */,
+				7F7604632E2CC6A6001CBC7B /* LottieView.swift in Sources */,
+				7F7604862E34DF79001CBC7B /* PneumoniaView.swift in Sources */,
+				7F7604932E34F4C3001CBC7B /* PneumoniaClassifyView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F76045A2E2CC320001CBC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F76045B2E2CC320001CBC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F76045D2E2CC320001CBC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediSense/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UA87QWAH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediSense/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MediSense AI";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to save recommendation snapshot to your Photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medisenseai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F76045E2E2CC320001CBC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediSense/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UA87QWAH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediSense/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MediSense AI";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to save recommendation snapshot to your Photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medisenseai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F7604492E2CC31F001CBC7B /* Build configuration list for PBXProject "MediSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F76045A2E2CC320001CBC7B /* Debug */,
+				7F76045B2E2CC320001CBC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F76045C2E2CC320001CBC7B /* Build configuration list for PBXNativeTarget "MediSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F76045D2E2CC320001CBC7B /* Debug */,
+				7F76045E2E2CC320001CBC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F76045F2E2CC482001CBC7B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F7604602E2CC482001CBC7B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F76045F2E2CC482001CBC7B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7F7604462E2CC31F001CBC7B /* Project object */;
+}

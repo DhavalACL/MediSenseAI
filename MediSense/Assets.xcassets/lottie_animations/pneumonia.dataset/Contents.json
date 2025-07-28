@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "pneumonia.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
