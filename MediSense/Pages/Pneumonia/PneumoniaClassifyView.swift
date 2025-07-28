@@ -101,7 +101,7 @@ struct PneumoniaClassifyView: View {
                             .font(.title3)
                             .foregroundColor(.black)
                         
-                        Text("NORMAL - 100%")
+                        Text(resultString)
                             .foregroundColor(.gray)
                     }
                     
