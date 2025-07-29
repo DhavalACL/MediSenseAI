@@ -12,7 +12,7 @@ class ImagePredictor {
     /// The VNCoreMLModel used for prediction.
     private let imageClassifier: VNCoreMLModel
 
-    /// Inject the model type (BrainTumour, Pneumonia, etc.)
+    /// Inject the model type (BrainTumor, Pneumonia, etc.)
     init(modelKind: ClinicalModel) {
         do {
             self.imageClassifier = try modelKind.makeVNModel()

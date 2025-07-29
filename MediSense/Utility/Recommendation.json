@@ -43,7 +43,7 @@
             ]
         },
         {
-            "diseaseKey": "braintumour-meningioma",
+            "diseaseKey": "brainTumor-meningioma",
             "conditions": {
                 "ageMin": 40,
                 "bp": { "systolicMin": 140 }
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "diseaseKey": "braintumour-glioma",
+            "diseaseKey": "brainTumor-glioma",
             "priority": 5,
             "treatment": [
                 "Oncologist consultation and biopsy",

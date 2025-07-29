@@ -53,8 +53,8 @@ struct HomePageView: View {
                         NavigationLink( destination: PneumoniaView()) {
                             DiseaseCardView(image: "ic_lungs", diseaseName: "Pneumonia")
                         }
-                        NavigationLink( destination: BrainTumourView()) {
-                            DiseaseCardView(image: "ic_Brain_Cancer", diseaseName: "Brain Tumour")
+                        NavigationLink( destination: BrainTumorView()) {
+                            DiseaseCardView(image: "ic_Brain_Cancer", diseaseName: "Brain Tumor")
                         }
                     }.padding(.horizontal)
                     

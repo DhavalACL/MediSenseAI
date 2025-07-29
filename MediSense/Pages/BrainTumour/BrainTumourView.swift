@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct BrainTumourView: View {
+struct BrainTumorView: View {
     @State private var isResultViewActive = false
     @Environment(\.dismiss) private var dismiss
         
@@ -41,7 +41,7 @@ struct BrainTumourView: View {
                                         .foregroundColor(.white)
                                 }
                             }
-                            Text("Brain Tumour Detection")
+                            Text("Brain Tumor Detection")
                                 .foregroundColor(Color.blue)
                                 .font(.headline)
                         }
@@ -72,7 +72,7 @@ struct BrainTumourView: View {
 
                 ToolbarItem(placement: .principal) {
                     VStack(spacing: 2) {
-                        Text("Brain Tumour Detection")
+                        Text("Brain Tumor Detection")
                     }
                     .font(.headline)
                     .multilineTextAlignment(.center)
@@ -92,7 +92,7 @@ private func backgroundLinks(
 ) -> some View {
     Group {
         NavigationLink(
-            destination: BrainTumourClassifyView(
+            destination: BrainTumorClassifyView(
                 viewModel: AppViewModel(),
                 lottieAnimationName: "brain_tumor",
                 imageMean: 244.0,

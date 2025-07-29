@@ -24,7 +24,7 @@
 		7F7604862E34DF79001CBC7B /* PneumoniaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604852E34DF79001CBC7B /* PneumoniaView.swift */; };
 		7F7604882E34E62A001CBC7B /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604872E34E62A001CBC7B /* NewsView.swift */; };
 		7F76048A2E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604892E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift */; };
-		7F76048E2E34EAC9001CBC7B /* BrainTumourClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */; };
+		7F76048E2E34EAC9001CBC7B /* BrainTumorClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F76048C2E34EAC8001CBC7B /* BrainTumorClassifier.mlpackage */; };
 		7F76048F2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */; };
 		7F7604912E34EBAA001CBC7B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604902E34EBAA001CBC7B /* ImagePicker.swift */; };
 		7F7604932E34F4C3001CBC7B /* PneumoniaClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7604922E34F4C3001CBC7B /* PneumoniaClassifyView.swift */; };
@@ -60,7 +60,7 @@
 		7F7604852E34DF79001CBC7B /* PneumoniaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PneumoniaView.swift; sourceTree = "<group>"; };
 		7F7604872E34E62A001CBC7B /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		7F7604892E34E9A2001CBC7B /* HeartDiseaseClassifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDiseaseClassifyView.swift; sourceTree = "<group>"; };
-		7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrainTumourClassifier.mlpackage; sourceTree = "<group>"; };
+		7F76048C2E34EAC8001CBC7B /* BrainTumorClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrainTumorClassifier.mlpackage; sourceTree = "<group>"; };
 		7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = PneumoniaClassifier.mlpackage; sourceTree = "<group>"; };
 		7F7604902E34EBAA001CBC7B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7F7604922E34F4C3001CBC7B /* PneumoniaClassifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PneumoniaClassifyView.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		7F76048B2E34EA8F001CBC7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7F76048C2E34EAC8001CBC7B /* BrainTumourClassifier.mlpackage */,
+				7F76048C2E34EAC8001CBC7B /* BrainTumorClassifier.mlpackage */,
 				7F76048D2E34EAC9001CBC7B /* PneumoniaClassifier.mlpackage */,
 			);
 			path = Models;
@@ -315,7 +315,7 @@
 				7F7604952E34FA65001CBC7B /* BrainTumourClassifyView.swift in Sources */,
 				7F7604822E34DD99001CBC7B /* OpenCloseTextBox.swift in Sources */,
 				7F7604992E3502DE001CBC7B /* ClinicalModel.swift in Sources */,
-				7F76048E2E34EAC9001CBC7B /* BrainTumourClassifier.mlpackage in Sources */,
+				7F76048E2E34EAC9001CBC7B /* BrainTumorClassifier.mlpackage in Sources */,
 				7FED0AC82E363AF0003CB2A3 /* RecommendationRules.swift in Sources */,
 				7FED0AC42E3639F4003CB2A3 /* PatientProfile.swift in Sources */,
 				7F8DB0832E3558DD00DAF22B /* ReccomendationModel.swift in Sources */,

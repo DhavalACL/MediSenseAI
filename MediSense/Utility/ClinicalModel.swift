@@ -10,14 +10,14 @@ import CoreML
 import Vision
 
 enum ClinicalModel: String {
-    case brainTumour
+    case brainTumor
     case pneumonia
     case heartDisease
 
     func makeVNModel(configuration: MLModelConfiguration = .init()) throws -> VNCoreMLModel {
         switch self {
-        case .brainTumour:
-            return try VNCoreMLModel(for: BrainTumourClassifier(configuration: configuration).model)
+        case .brainTumor:
+            return try VNCoreMLModel(for: BrainTumorClassifier(configuration: configuration).model)
         case .pneumonia:
             return try VNCoreMLModel(for: PneumoniaClassifier(configuration: configuration).model)
         case .heartDisease:

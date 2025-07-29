@@ -1,5 +1,5 @@
 //
-//  BrainTumourClassifyView.swift
+//  BrainTumorClassifyView.swift
 //  MediSense
 //
 //  Created by Dhaval Upendrakumar Trivedi on 26/07/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BrainTumourClassifyView: View {
+struct BrainTumorClassifyView: View {
     @ObservedObject var viewModel: AppViewModel
     @State private var showAlert = false
     @State private var classificationLabel = ""
@@ -41,7 +41,7 @@ struct BrainTumourClassifyView: View {
                 }
             }
         }
-        .navigationTitle("Detect Brain Tumour")
+        .navigationTitle("Detect Brain Tumor")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
@@ -63,7 +63,7 @@ struct BrainTumourClassifyView: View {
                         .frame(height: 300)
                         .cornerRadius(12)
                         .onAppear {
-                            viewModel.classifyWith(image: image, modelKind: .brainTumour) { result in
+                            viewModel.classifyWith(image: image, modelKind: .brainTumor) { result in
                                 print(result ?? "")
                                 guard let result = result else {
                                     return
@@ -75,13 +75,13 @@ struct BrainTumourClassifyView: View {
                                     if predictionString[idx] == "%" {
                                         let resultLabel = String(predictionString.dropLast())
                                         let diseaseKey = resultLabel.components(separatedBy: "-").first?.trimmingCharacters(in: .whitespaces)
-                                        viewModel.currentDiseaseKey = "braintumour-" + (diseaseKey ?? "")
+                                        viewModel.currentDiseaseKey = "brainTumor-" + (diseaseKey ?? "")
                                         viewModel.resultLabel = resultLabel
                                     }
                                 } else {
                                     let resultLabel = String(predictionString.dropLast())
                                     let diseaseKey = resultLabel.components(separatedBy: "-").first?.trimmingCharacters(in: .whitespaces)
-                                    viewModel.currentDiseaseKey = "braintumour-" + (diseaseKey ?? "")
+                                    viewModel.currentDiseaseKey = "brainTumor-" + (diseaseKey ?? "")
                                     viewModel.resultLabel = resultLabel
                                 }
                             }
